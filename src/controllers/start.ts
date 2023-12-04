@@ -2,7 +2,7 @@ import { RequestHandler } from 'express';
 
 const startMessage: RequestHandler = (req, res) => {
     res.status(200).json({
-        Hello: `Hello. Please send request with '/help' route to see all available commands.`,
+        Hello: `Hi! Try to get currency kucoin, coinStats, coinPaprika, coinMarketCap, coinBase.`,
     });
 };
 

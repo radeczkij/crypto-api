@@ -10,7 +10,7 @@ const cronController_1 = __importDefault(require("./controllers/cronController")
 const router_1 = __importDefault(require("./routes/router"));
 const PORT = 5000;
 const app = (0, express_1.default)();
-app.use('/', router_1.default);
+app.use('/api', router_1.default);
 app.listen(PORT, () => {
     (0, cronController_1.default)();
     console.log(`Server is running on port ${PORT}.`);

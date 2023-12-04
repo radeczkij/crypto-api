@@ -8,7 +8,7 @@ import router from './routes/router';
 const PORT = 5000;
 const app = express();
 
-app.use('/', router);
+app.use('/api', router);
 
 app.listen(PORT, () => {
     getEndpoints();

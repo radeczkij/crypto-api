@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { RequestHandler } from 'express';
 import Coin from '../models/coins';
 
-// eslint-disable-next-line no-async-promise-executor
 const findPriceByTime: RequestHandler = async (req, res) => {
     try {
         const market = req.params.market;
